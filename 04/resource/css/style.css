@@ -1,0 +1,134 @@
+	*{
+		box-sizing:border-box;
+	}
+	body{
+		margin:0;
+		background-color:#C8ECC8;
+	}
+	img{
+		vertical-align:middle;
+	}
+	a{
+		text-decoration:none;
+	}
+	.container{
+		width:750px;
+		margin:0 auto;
+	}
+	.navigator{
+		background-color:#587038;
+	}
+	.navigator .nav{
+		display:inline-block;
+		padding:9px 0;
+		width:16.6666666667%;
+		text-align:center;
+		color:#F0FD02;
+	}
+	.navigator .nav-block{
+		cursor:pointer;
+		position:relative;
+		z-index:100;
+	}
+	.navigator .nav-block .hidden{
+		display:none;
+		position:absolute;
+		left:0;
+		top:100%;
+		width:100%;
+		background-color:#587038;
+		z-index:200;
+	}
+	.navigator .nav-block .hidden a{
+		display:block;
+		padding:9px 0;
+		color:#F0FD02;
+	}
+	.navigator .nav-block:hover .hidden{
+		display:block;
+	}
+
+	.main .left,
+	.main .center,
+	.main .right{
+		display:inline-block;
+		vertical-align:top;
+	}
+
+	.main .left{
+		width:200px;
+	}
+	.main .left label{
+		display:block;
+		background-color:#999933;
+		color:#fff;
+		padding:6px 3px;
+		cursor:pointer;
+	}
+	.main .left input{
+		display:none;
+	}
+	.main .left .img{
+		height:0;
+		overflow:hidden;
+		transition:height .5s;
+	}
+	.main .left input:checked + .img{
+		height:600px;
+	}
+
+	.main .center{
+		width:300px;
+	}
+	.main .center .select label{
+		display:inline-block;
+		color:#F0FD02;
+		padding:6px 12px;
+		background-color:#00511B;
+		transition:background-color .5s;
+		cursor:pointer;
+	}
+	.main .center .select label:hover{
+		background-color:#669966;
+	}
+	.main .center input{
+		display:none;
+	}
+	.main .center .nav{
+		display:none;
+		background-color:#57840D;
+		padding:6px;
+	}
+	.main .center .nav a{
+		display:block;
+		margin:3px 0;
+		color:#fff;
+		transition:color .5s;
+	}
+	.main .center .nav a:hover{
+		color:#333;
+	}
+	.main .center input:checked + .nav{
+		display:block;
+	}
+	.main .center .text{
+		padding:6px;
+		color:#030;
+		background-color:#fff;
+	}
+
+	.main .right{
+		width:250px;
+	}
+	.main .right .item{
+		border-bottom:24px solid #99F;
+	}
+	.main .right .item img{
+		max-width:100%;
+	}
+
+	.footer{
+		padding:9px 0;
+		text-align:center;
+		background:#eee;
+	}

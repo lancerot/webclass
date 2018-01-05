@@ -1,0 +1,148 @@
+*{
+	box-sizing:border-box;
+	position:relative;
+	vertical-align:middle;
+}
+body{
+	margin:0;
+	font-family:"microsoft yahei";
+	font-size:12px;
+	min-width:1020px;
+	background-color:#FDFFEA;
+}
+a{
+	color:#000;
+	text-decoration:none;
+	transition:color .6s;
+}
+a:hover{
+	color:#666;
+}
+.pr12{
+	padding-right:12px;
+}
+.pl12{
+	padding-left:12px;
+}
+.container{
+	width:1020px;
+	margin:0 auto;
+}
+.header,
+.main,
+.footer{
+	padding:30px 60px;
+}
+.header{
+	height:250px;
+	background-image:url("../image/templatemo_header.jpg");
+}
+.header .line .logo,
+.header .line .navigator{
+	display:inline-block;
+}
+.header .line .logo img{
+	display:block;
+}
+.header .line .navigator{
+	width:631px;
+}
+.header .line .navigator .item{
+	display:inline-block;
+	width:20%;
+	text-align:center;
+	font-size:18px;
+	color:#84A92E;
+}
+.header .line .navigator .item > a,
+.header .line .navigator .item .hidden > a{
+	color:#84A92E;
+}
+.header .line .navigator .item:hover > a,
+.header .line .navigator .item .hidden > a:hover{
+	color:#E6DC80;
+}
+.header .line .navigator .item img{
+	margin-right:12px;
+	transition:transform .6s;
+}
+.header .line .navigator .item:hover img{
+	transform:rotate(90deg);
+}
+.header .line .navigator .item .hidden{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	width:100%;
+}
+.header .line .navigator .item:hover .hidden{
+	display:block;
+}
+.header .line .navigator .item .hidden a{
+	display:block;
+	padding:6px 0;
+	margin:1px 0;
+	text-align:center;
+}
+.main{
+	height:490px;
+	background-image:url("../image/templatemo_content.jpg");
+}
+.main .block{
+	display:inline-block;
+	width:50%;
+	vertical-align:top;
+}
+.main .block .title{
+	font-size:24px;
+	padding:12px 0;
+}
+.main .block .content .paragraph{
+	font-size:15px;
+	color:#666;
+}
+.main .block .content .paragraph:nth-of-type(n+2){
+	margin:12px 0;
+}
+.main .block .content > img,
+.main .block .content .image-match{
+	display:inline-block;
+	vertical-align:top;
+}
+.main .block .content > img{
+	width:120px;
+	height:120px;
+	margin-right:12px;
+}
+.main .block .content .image-match{
+	width:306px;
+}
+.main .block .content .paragraph a.text-link{
+	color:#84A92E;
+	text-decoration:underline;
+}
+.main .block .content .paragraph a.text-link-block{
+	display:block;
+	margin:18px 0;
+	padding:0 12px;
+	color:#84A92E;
+	font-size:18px;
+}
+.main .block .content .paragraph a.text-link-block > img{
+	margin-right:12px;
+}
+.footer{
+	height:321px;
+	background-image:url("../image/templatemo_footer.jpg");
+}
+.footer .footer-logo{
+	text-align:right;
+}
+.footer .footer-logo > img{
+	display:inline-block;
+	width:60px;
+	height:60px;
+	margin:0 12px;
+	cursor:pointer;
+}

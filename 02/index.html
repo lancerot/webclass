@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			*{
+				position:relative;
+				box-sizing:border-box;
+			}
+			body{
+				margin:0;
+				font-size:15px;
+			}
+			a{
+				text-decoration:none;
+			}
+			.container{
+				width:800px;
+				height:900px;
+				margin:0 auto;
+				background-image:url(resource/image/bg.jpg);
+				background-size:contain;
+			}
+			.content{
+				position:absolute;
+				top:39px;
+				left:150px;
+				width:483px;
+				margin:0 auto;
+			}
+			.content .head{
+				text-align:right;
+				margin-bottom:24px;
+			}
+			.content .head .link{
+				display:inline-block;
+				padding:18px 24px;
+				font-size:36px;
+			}
+			.content .head .link:nth-of-type(1){
+				color:red;
+			}
+			.content .head .link:nth-of-type(2){
+				color:green;
+			}
+			.content .head .link:nth-of-type(3){
+				color:blue;
+			}
+			.content .body .info .profile,
+			.content .body .info .text{
+				display:inline-block;
+				vertical-align:middle;
+			}
+			.content .body .info .profile{
+				width:203px;
+			}
+			.content .body .info .profile img{
+				display:block;
+				width:180px;
+				margin:0 auto;
+			}
+			.content .body .info .text{
+				width:280px;
+			}
+			.content .body .description{
+				padding:12px;
+			}
+			.content .body .description .item{
+				margin:3px 0;
+			}
+			.content .body .description .item div{
+				margin:1px 0;
+			}
+			.content .body .description .item div:nth-of-type(1){
+				font-size:36px;
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="head">
+					<a class="link" href="javascript:void(0)">
+						<span>简历</span>
+					</a><a class="link" href="javascript:void(0)">
+						<span>优势</span>
+					</a><a class="link" href="javascript:void(0)">
+						<span>技能</span>
+					</a>
+				</div>
+				<div class="body">
+					<div class="info">
+						<div class="profile">
+							<img src="resource/image/profile.jpg">
+						</div><div class="text">
+							<div>姓名：田野</div>
+							<div>性别：男</div>
+							<div>出生年月：97/6/17</div>
+							<div>籍贯：四川</div>
+							<div>政治面貌：团员</div>
+							<div>学位：</div>
+							<div>学历：</div>
+						</div>
+					</div>
+					<div class="description">
+						<div class="item">
+							<div>能力素质</div>
+							<div>1.精通Linux+nginx/apache+mysql+php架构的软件开发。</div>
+							<div>2.熟练掌握div+css，javascript，xml，json，jquery，ajax原理。</div>
+							<div>3.熟练掌握XML，HTML，CSS，JavaScript，JSON，JQuery/Ajax等Web页面技术，了解SEO原理及应用。</div>
+						</div>
+						<div class="item">
+							<div>自我评价</div>
+							<div>1.优良的逻辑分析及学习能力，良好的编程基础和编程风格。</div>
+							<div>2.良好的执行力及独立完成任务的能力，适应快速成长型团队的要求。</div>
+							<div>3.乐观、坚毅，责任心强，善于与人沟通，团队合作精神强。</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
