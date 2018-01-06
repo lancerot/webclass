@@ -1,0 +1,127 @@
+*{
+	position:relative;
+	box-sizing:border-box;
+}
+html{
+	font-family:"microsoft yahei";
+	font-size:18px;
+}
+body{
+	margin:0 0 60px 0;
+	font-size:1rem;
+	min-width:1024px;
+	background-color:whitesmoke;
+}
+a{
+	text-decoration:none;
+	color:cornflowerblue;
+}
+
+.common-container{
+	width:1024px;
+	margin:0 auto;
+}
+
+.layout-top,
+.layout-main,
+.layout-bottom{
+	padding:1rem;
+	margin-bottom:2rem;
+	background-color:white;
+	border-radius:3px;
+	box-shadow:0 0 3px grey;
+}
+.layout-bottom{
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	color:grey;
+	margin-bottom:0;
+}
+
+.layout-top-navigator,
+.layout-top-profile{
+	display:inline-block;
+	vertical-align:middle;
+}
+.layout-top-navigator{
+	width:924px;
+}
+.layout-top-navigator a{
+	display:inline-block;
+	padding:.5rem 2rem;
+	margin-right:1rem;
+	border-radius:6px;
+	transition:color,background-color .25s,.25s;
+}
+.layout-top-navigator a.current,
+.layout-top-navigator a:hover{
+	color:white;
+	background-color:cornflowerblue;
+}
+.layout-top-profile{
+	width:64px;
+	border-radius:50%;
+	overflow-x:hidden;
+}
+.layout-top-profile img{
+	display:block;
+	max-width:100%;
+}
+
+.layout-main-title{
+	font-size:2rem;
+	font-weight:bold;
+	margin-bottom:1rem;
+}
+
+.content-intro-item,
+.content-intro-spitem{
+	padding:.5rem 1rem;
+}
+.content-intro-spitem > div:nth-of-type(1){
+	font-size:1.5rem;
+}
+
+.content-hometown-title{
+	font-size:1.5rem;
+	font-weight:bold;
+	padding:1rem;
+}
+.content-hometown-img,
+.content-hometown-text{
+	display:inline-block;
+	vertical-align:top;
+}
+.content-hometown-img{
+	width:25%;
+}
+.content-hometown-text{
+	padding:1rem;
+	width:75%;
+}
+
+.content-hobby-title{
+	font-size:1.5rem;
+	font-weight:bold;
+	padding:1rem;
+}
+.content-hobby-img{
+	display:block;
+	width:75%;
+	margin:.5rem auto;
+}
+
+.content-exhibition-item{
+	display:inline-block;
+	vertical-align:middle;
+	box-shadow:0 0 3px grey;
+	width:50%;
+	padding:1rem;
+}
+.content-exhibition-item img{
+	display:block;
+	width:100%;
+}
